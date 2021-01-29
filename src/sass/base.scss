@@ -1,0 +1,43 @@
+@import 'helpers/variables.scss';
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding: 30px 10px;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+.button {
+  background-color: $button-color;
+  border: none;
+  border-radius: 60px;
+  color: $primary-light-color;
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover-color;
+  }
+}

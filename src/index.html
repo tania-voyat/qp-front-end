@@ -3,9 +3,277 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
     <title>QP Front-End Task</title>
   </head>
-
-  <body></body>
+  <body>
+    <header class="header">
+      <nav class="site-nav">
+        <h1 class="logo">
+          <a href="#">LOGO</a>
+        </h1>
+        <ul class="menu header__menu">
+          <li class="menu__item">
+            <a href="#">How it works</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">About</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Instructions</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Accounts</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Platforms</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <div class="menu-toggle">
+          <div class="burger"></div>
+        </div>
+      </nav>
+    </header>
+    <section class="contact-section">
+      <div>
+        <h2 class="contact-section__heading">Trade everywhere. Invest here!</h2>
+        <p class="section__text">
+          We provide only the best trading software. The trading terminal
+          MetaTrader4 is the most popular and convenient platform for access to
+          global exchanges. You can work anywhere.
+        </p>
+        <button class="button section-button">Start Trading</button>
+      </div>
+      <img
+        class="section__image"
+        srcset="
+          ./images/diagram@1x.png   280w,
+          ./images/diagram@1,5x.png 627w,
+          ./images/diagram@2x.png   836w
+        "
+        sizes="(max-width: 768px) 280px,
+        (max-width: 1200px) 418px,
+        482px"
+        src="./images/diagram@2x.png"
+        alt="diagram"
+      />
+    </section>
+    <section class="info-section">
+      <h2 class="info-section__heading">
+        Getting Started Is <span>Fast & Easy</span>
+      </h2>
+      <div class="section__list">
+        <div class="list__item">
+          <span class="list__number">01.</span>
+          <h3 class="sub-heading">Register</h3>
+          <p class="section__text">
+            Complete the simple registration to get your trading credentials.
+          </p>
+        </div>
+        <div class="list__item">
+          <span class="list__number">02.</span>
+          <h3 class="sub-heading">Verification</h3>
+          <p class="section__text">
+            Big Invest is required to verify your identity, upload your
+            documents quickly and get approved in minutes.
+          </p>
+        </div>
+        <div class="list__item">
+          <span class="list__number">03.</span>
+          <h3 class="sub-heading">Deposit Funds</h3>
+          <p class="section__text">
+            Big Invest accepts credit cards and bank wires. Just use the secure
+            deposit form and follow the steps.
+          </p>
+        </div>
+        <div class="list__item">
+          <span class="list__number">04.</span>
+          <h3 class="sub-heading">Start Trading</h3>
+          <p class="section__text">
+            Once your deposit has been credited, you can begin trading
+            instantly. In no time you will see profits rolling into your
+            account.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="info-section">
+      <h2 class="info-section__heading">People love <span>Big Invest</span></h2>
+      <img class="photo" src="./images/Ellipse 14.png" alt="photo" />
+      <span class="name">Albert Abello</span>
+      <span class="position">Director of Growth</span>
+      <p class="comment">
+        This magical product actually works! It has radically changed the way we
+        build our audiences. Increasing new customer sales by 6x in our most
+        mature market.
+      </p>
+    </section>
+    <section class="info-section">
+      <h2 class="info-section__heading">
+        Frequently asked <span>questions</span>
+      </h2>
+      <div class="question-list">
+        <div class="list__item question-box">
+          <div>
+            <span class="question">How do I change my details?</span>
+            <button class="open-button"></button>
+          </div>
+          <p class="answer"></p>
+        </div>
+        <div class="list__item question-box">
+          <div>
+            <span class="question">What platforms will I be able to use?</span>
+            <button class="open-button"></button>
+          </div>
+          <p class="answer">
+            We provide only the best trading software. The trading terminal
+            MetaTrader4 is the most popular and convenient platform for access
+            to global exchanges. You can work anywhere. All you need is the
+            Internet because the necessary trading tools are already collected
+            in one place and are available in a couple of clicks. Use only the
+            best and develop with us!
+          </p>
+        </div>
+        <div class="list__item question-box">
+          <div>
+            <span class="question">How do I change my details?</span>
+            <button class="open-button"></button>
+          </div>
+          <p class="answer"></p>
+        </div>
+        <div class="list__item question-box">
+          <div>
+            <span class="question">How do I change my details?</span>
+            <button class="open-button"></button>
+          </div>
+          <p class="answer"></p>
+        </div>
+        <div class="list__item question-box">
+          <div>
+            <span class="question">How do I change my details?</span>
+            <button class="open-button"></button>
+          </div>
+          <p class="answer"></p>
+        </div>
+        <div class="list__item question-box">
+          <div>
+            <span class="question">How do I change my details?</span>
+            <button class="open-button"></button>
+          </div>
+          <p class="answer"></p>
+        </div>
+        <div class="list__item question-box">
+          <div>
+            <span class="question">How do I change my details?</span>
+            <button class="open-button"></button>
+          </div>
+          <p class="answer"></p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+    <div>
+      <h2 class="contact-section__heading">Contact us!</h2>
+      <p class="section__text">
+        The support staff and customer service are available to help you with
+        any questions or needs you might have. Just drop us a line.
+      </p>
+      <p class="contacts__text">
+        This site is owned and operated by Kode Tech Solutions LTD
+      </p>
+      <span class="contacts">Phone:</span>
+      <p class="contacts__text">442038857261</p>
+      <span class="contacts">Email:</span>
+      <p class="contacts__text">help@google.com</p>
+      <span class="contacts">Address:</span>
+      <p class="contacts__text">
+        Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic
+        of the Marshall Islands, MH 96960
+      </p>
+    </div>
+      <form action="" class="form">
+        <input class="form__input" type="text" placeholder="Name" />
+        <input class="form__input" type="email" placeholder="Email" />
+        <textarea
+          name="text"
+          id=""
+          cols="30"
+          rows="10"
+          class="form__input message__input"
+          placeholder="Message"
+        ></textarea>
+        <button class="button form__button" type="submit">Send</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <nav>
+        <h1 class="logo footer__logo">
+          <a href="#">LOGO</a>
+        </h1>
+        <ul class="footer__menu">
+          <li class="menu__item">
+            <a href="#">About Us</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Instructions</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Platforms</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Contact Us</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Sign In</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Sign up for free</a>
+          </li>
+        </ul>
+      </nav>
+      <span class="footer__sub-heading"
+        >Information and high risk warning:</span
+      >
+      <p class="footer__text">
+        Trading with foreign exchange (FX), contract for differences (CFDs) and
+        precious metals carries a high level of risk that may not be suitable
+        for all investors. Leverage creates additional risk and loss exposure.
+        Before you decide to trade foreign exchange or contract for differences,
+        carefully consider your investment objectives, experience level, and
+        risk tolerance.
+      </p>
+      <span class="footer__sub-heading">Legal disclaimer:</span>
+      <p class="footer__text">
+        Forex trading entails significant risks and is not appropriate for all
+        investors. The possibility of incurring substantial losses should be
+        taken into account. It is therefore important to understand the possible
+        consequences of investing. Traders should weigh their earning potential
+        against the risks involved and act accordingly. Interactive Trade Ltd
+        operating under brand and using domenLink domain within the European
+        Economic Area.
+      </p>
+      <span class="copyright">
+        <a href="#">Copyright 2020, All Right Reserved</a>
+      </span>
+      <span class="copyright">
+        <a href="#">Terms and Conditions</a>
+      </span>
+      <span class="copyright">
+        <a href="#">Privacy Policy</a>
+      </span>
+      <span class="copyright">
+        <a href="#">Risk Warnings</a>
+      </span>
+      <span class="copyright">
+        <a href="#">Anti-Money Laundering</a>
+      </span>
+    </footer>
+  </body>
 </html>

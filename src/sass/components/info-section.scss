@@ -1,0 +1,111 @@
+.info-section__heading {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: $secondary-dark-color;
+  margin: 40px 0;
+  & span {
+    background-color: $background-color;
+  }
+}
+.list__item {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 280px;
+  background: $primary-light-color;
+  border: 2px solid $border-color;
+  box-sizing: border-box;
+  border-radius: 30px;
+  margin: 0 auto 15px;
+}
+.list__number {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: $border-color;
+}
+.sub-heading {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: $secondary-dark-color;
+  margin-bottom: 20px;
+}
+.photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.name {
+  display: block;
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: $secondary-dark-color;
+}
+.position {
+  display: block;
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: $secondary-dark-color;
+  opacity: 0.7;
+}
+.comment {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $secondary-dark-color;
+  &::before {
+    content: url('images/parentheses.png');
+    display: block;
+    width: 33px;
+    height: 27px;
+    margin: 20px auto;
+  }
+}
+.question-box {
+  border-radius: 15px;
+  width: 100%;
+  & div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.question {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $secondary-dark-color;
+}
+.open-button {
+  border: none;
+  width: 18px;
+  height: 18px;
+  background: url('images/Group.svg');
+  cursor: pointer;
+}
+.answer {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  line-height: 27px;
+  color: $text-color;
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .info-section {
+    padding: 60px 30px;
+  }
+}

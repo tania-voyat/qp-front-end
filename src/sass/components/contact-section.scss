@@ -1,0 +1,113 @@
+.contact-section {
+  background: $background-color;
+}
+.contact-section__heading {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: $secondary-dark-color;
+  margin: 0 0 40px;
+}
+
+.section__text {
+  font-family: $secondary-font-family;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+.contacts {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: $secondary-dark-color;
+  display: block;
+  margin-bottom: 10px;
+}
+.contacts__text {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  line-height: 27px;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+.section-button {
+  display: block;
+  width: 280px;
+  height: 54px;
+  margin: 0 auto 20px;
+}
+.section__image {
+  display: block;
+  margin: 0 auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+  background: #ffffff;
+  border: 2px solid #4f62f6;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 40px 10px;
+  margin: 0 auto;
+}
+.form__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid $light-border-color;
+  box-sizing: border-box;
+  border-radius: 3px;
+  &::placeholder {
+    font-family: $secondary-font-family;
+    font-size: 16px;
+    line-height: 26px;
+    color: $placeholder-color;
+    vertical-align: baseline;
+  }
+}
+.message__input {
+  margin-bottom: 40px;
+  height: 89px;
+}
+.form__button {
+  display: block;
+  padding: 20px 64px;
+  width: 172px;
+  height: 54px;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 30px 60px;
+  }
+  .contact-section__heading {
+    font-size: 64px;
+    line-height: 72px;
+  }
+  .form {
+    width: 470px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .contact-section__heading {
+    text-align: center;
+  }
+  .section__text {
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 90px;
+    & div {
+      margin-right: 40px;
+    }
+  }
+}

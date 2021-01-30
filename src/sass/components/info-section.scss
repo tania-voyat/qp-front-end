@@ -74,13 +74,17 @@
   }
 }
 .question-box {
+  padding: 24px;
+  background: $primary-light-color;
+  border: 2px solid $border-color;
+  box-sizing: border-box;
+  margin: 0 auto 15px;
   border-radius: 15px;
   width: 100%;
-  & div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .question {
   font-family: $primary-font-family;
@@ -101,11 +105,113 @@
   font-size: 16px;
   line-height: 27px;
   color: $text-color;
+  width: 100%;
   display: none;
 }
+.show {
+  display: inline;
+}
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) {
+  .list__item {
+    position: absolute;
+    width: 329px;
+    &::before,
+    &::after {
+      position: absolute;
+    }
+  }
+  .section__list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    height: 900px;
+    margin: 0 auto;
+  }
+  .first-item::after {
+    content: url('images/Vector34.png');
+    top: 50%;
+    left: 100%;
+  }
+  .second-item {
+    top: 20%;
+    left: 340px;
+    &::before {
+      content: url('images/Vector37.png');
+      top: 50%;
+      right: 100%;
+    }
+  }
+  .third-item {
+    top: 43%;
+    &::after {
+      content: url('images/Vector38.png');
+      top: 50%;
+      left: 100%;
+    }
+  }
+  .fourth-item {
+    top: 65%;
+    left: 340px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
   .info-section {
-    padding: 60px 30px;
+    padding: 30px 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .info-section {
+    padding: 30px 80px;
+  }
+  .question-box {
+    width: 995px;
+  }
+  .list__item {
+    width: 423px;
+  }
+  .first-item::after {
+    top: 50%;
+    left: 100%;
+  }
+  .second-item {
+    top: 18%;
+    left: 500px;
+  }
+  .third-item {
+    top: 38%;
+    &::after {
+      top: 50%;
+      left: 100%;
+    }
+  }
+  .fourth-item {
+    top: 58%;
+    left: 500px;
+  }
+  .feedback-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    & div {
+      width: 50%;
+    }
+    .photo {
+      display: inline;
+    }
+    .name {
+      display: inline;
+    }
+    .position {
+      display: inline;
+    }
+    .comment {
+      text-align: initial;
+      &::before {
+        display: inline;
+      }
+    }
   }
 }

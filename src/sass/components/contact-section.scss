@@ -45,22 +45,24 @@
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   width: 280px;
+  height: 415px;
   background: $primary-light-color;
   border: 2px solid $border-color;
   box-sizing: border-box;
   border-radius: 20px;
-  padding: 40px 10px;
+  padding: 20px;
   margin: 0 auto;
 }
 .form__input {
   width: 100%;
-  margin-bottom: 20px;
   padding: 10px;
   border: 1px solid $light-border-color;
   box-sizing: border-box;
   border-radius: 3px;
+  position: relative;
   &::placeholder {
     font-family: $secondary-font-family;
     font-size: 16px;
@@ -68,9 +70,14 @@
     color: $placeholder-color;
     vertical-align: baseline;
   }
+  &:invalid:not(:placeholder-shown) {
+    border-color: $not-valid-form-color;
+  }
+  &:valid:not(:placeholder-shown) {
+    border-color: $valid-form-color;
+  }
 }
-.message__input {
-  margin-bottom: 40px;
+.message {
   height: 89px;
 }
 .form__button {
@@ -79,7 +86,17 @@
   width: 172px;
   height: 54px;
 }
-
+.error {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: $not-valid-form-color;
+  text-align: initial;
+}
+.invalid {
+  border-color: $not-valid-form-color;
+}
 @media (min-width: 768px) {
   .contact-section {
     padding: 30px 60px;
@@ -89,7 +106,8 @@
     line-height: 72px;
   }
   .form {
-    width: 470px;
+    width: 508px;
+    height: 471px;
   }
 }
 @media (min-width: 768px) and (max-width: 1199px) {

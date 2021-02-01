@@ -8,6 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
+    />
     <title>QP Front-End Task</title>
   </head>
   <body>
@@ -106,15 +110,47 @@
     </section>
     <section class="info-section feedback-section">
       <h2 class="info-section__heading">People love <span>Big Invest</span></h2>
-      <div>
-        <img class="photo" src="./images/Ellipse 14.png" alt="photo" />
-        <span class="name">Albert Abello</span>
-        <span class="position">Director of Growth</span>
-        <p class="comment">
-          This magical product actually works! It has radically changed the way
-          we build our audiences. Increasing new customer sales by 6x in our
-          most mature market.
-        </p>
+      <div id="splide" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div>
+                <img class="photo" src="./images/Ellipse 14.png" alt="photo" />
+                <span class="name">Albert Abello</span>
+                <span class="position">Director of Growth</span>
+                <p class="comment">
+                  This magical product actually works! It has radically changed
+                  the way we build our audiences. Increasing new customer sales
+                  by 6x in our most mature market.
+                </p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div>
+                <img class="photo" src="./images/Ellipse 14.png" alt="photo" />
+                <span class="name">Albert Abello</span>
+                <span class="position">Director of Growth</span>
+                <p class="comment">
+                  This magical product actually works! It has radically changed
+                  the way we build our audiences. Increasing new customer sales
+                  by 6x in our most mature market.
+                </p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div>
+                <img class="photo" src="./images/Ellipse 14.png" alt="photo" />
+                <span class="name">Albert Abello</span>
+                <span class="position">Director of Growth</span>
+                <p class="comment">
+                  This magical product actually works! It has radically changed
+                  the way we build our audiences. Increasing new customer sales
+                  by 6x in our most mature market.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="info-section">
@@ -229,14 +265,14 @@
         </p>
       </div>
       <form action="" class="form">
-        <input class="form__input" type="text" placeholder="Name" />
-        <input class="form__input" type="email" placeholder="Email" />
+        <input class="form__input user" type="text" placeholder="Name" />
+        <input class="form__input email" type="email" placeholder="Email" />
         <textarea
           name="text"
           id=""
           cols="30"
           rows="10"
-          class="form__input message__input"
+          class="form__input message"
           placeholder="Message"
         ></textarea>
         <button class="button form__button" type="submit">Send</button>

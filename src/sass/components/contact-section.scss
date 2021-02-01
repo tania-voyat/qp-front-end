@@ -1,0 +1,131 @@
+.contact-section {
+  background: $background-color;
+}
+.contact-section__heading {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: $secondary-dark-color;
+  margin: 0 0 40px;
+}
+.section__text {
+  font-family: $secondary-font-family;
+  font-size: 18px;
+  line-height: 30px;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+.contacts {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: $secondary-dark-color;
+  display: block;
+  margin-bottom: 10px;
+}
+.contacts__text {
+  font-family: $secondary-font-family;
+  font-size: 16px;
+  line-height: 27px;
+  color: $text-color;
+  margin-bottom: 20px;
+}
+.section-button {
+  display: block;
+  width: 280px;
+  height: 54px;
+  margin: 0 auto 40px;
+}
+.section__image {
+  display: block;
+  margin: 0 auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 280px;
+  height: 415px;
+  background: $primary-light-color;
+  border: 2px solid $border-color;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 auto;
+}
+.form__input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid $light-border-color;
+  box-sizing: border-box;
+  border-radius: 3px;
+  position: relative;
+  &::placeholder {
+    font-family: $secondary-font-family;
+    font-size: 16px;
+    line-height: 26px;
+    color: $placeholder-color;
+    vertical-align: baseline;
+  }
+  &:invalid:not(:placeholder-shown) {
+    border-color: $not-valid-form-color;
+  }
+  &:valid:not(:placeholder-shown) {
+    border-color: $valid-form-color;
+  }
+}
+.message {
+  height: 89px;
+}
+.form__button {
+  display: block;
+  padding: 20px 64px;
+  width: 172px;
+  height: 54px;
+}
+.error {
+  font-family: $primary-font-family;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: $not-valid-form-color;
+  text-align: initial;
+}
+.invalid {
+  border-color: $not-valid-form-color;
+}
+@media (min-width: 768px) {
+  .contact-section {
+    padding: 30px 60px;
+  }
+  .contact-section__heading {
+    font-size: 64px;
+    line-height: 72px;
+  }
+  .form {
+    width: 508px;
+    height: 471px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contact-section__heading {
+    text-align: center;
+  }
+  .section__text {
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 90px;
+    & div {
+      margin-right: 40px;
+      width: 483px;
+    }
+  }
+}

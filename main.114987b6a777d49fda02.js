@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{QfWi:function(e,t,n){"use strict";n.r(t);var o;n("h3ov");o=document.querySelector(".site-nav"),document.querySelector(".menu-toggle").addEventListener("click",(function(){o.classList.toggle("open")})),document.querySelector(".question-list").addEventListener("click",(function(e){"open-button"===e.target.className&&e.target.nextElementSibling.classList.toggle("show")}))},h3ov:function(e,t,n){}},[["QfWi",1]]]);
-//# sourceMappingURL=main.114987b6a777d49fda02.js.map
